@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fasco Shopping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="baslik">FASCO</h1>
+      <ul class="menu">
+        <ul>
+          <li><a href="home.html" class="home">Home</a></li>
+          <li><a href="shop.html" class="shop">Shop</a></li>
+          <li><a href="product.html" class="product">Product</a></li>
+          <li><a href="pages.html" class="pages">Pages</a></li>
+        </ul>
+      </ul>
+      <div class="tools">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+      </div>
+      <div class="container">
+        <div class="gallery">
+          <!-- Küçük resimler (6 tane) -->
+          <img
+            src="kucuk1.png"
+            alt="Resim 1"
+            class="thumbnail"
+            onclick="changeImage('kucuk1.png')"
+          />
+          <img
+            src="responsive-image.png"
+            alt="Resim 2"
+            class="thumbnail"
+            onclick="changeImage('responsive-image.png')"
+          />
+          <img
+            src="kucuk2.png"
+            alt="Resim 3"
+            class="thumbnail"
+            onclick="changeImage('kucuk2.png')"
+          />
+          <img
+            src="kucuk3.png"
+            alt="Resim 4"
+            class="thumbnail"
+            onclick="changeImage('kucuk3.png')"
+          />
+          <img
+            src="kucuk4.png"
+            alt="Resim 5"
+            class="thumbnail"
+            onclick="changeImage('kucuk4.png')"
+          />
+          <img
+            src="kucuk5.png"
+            alt="Resim 6"
+            class="thumbnail"
+            onclick="changeImage('kucuk5.png')"
+          />
+        </div>
+
+        <div class="large-image-container">
+          <!-- Büyük resim -->
+          <img id="large-image" src="responsive-image.png" alt="Büyük Resim" />
+        </div>
+      </div>
+      <div class="details">
+        <div class="ustbaslik">FASCO</div>
+        <div class="urunyildiz">
+          <div class="urunadi">Denim Jacket</div>
+          <div class="yildizyan">☆</div>
+        </div>
+        <div class="yildiz">★★★★☆ (3)</div>
+        <div class="fiyatbolumu">
+          <div class="fiyat">$39.00</div>
+          <div class="eskif">$59.00</div>
+          <div class="indirim">SAVE 33%</div>
+        </div>
+        <div class="view"><i class="fa-solid fa-eye"></i><div class="viewtext">24 people are viewing this right now</div>
+            </div>
+            <div class="pink">
+              <div class="border"><div class="text1">Hurry up! Sale ends in: <div class="timeh"> 00 : 05 : 59 : 47</div></div></div>
+          </div>
+          <div class="stock">Only <strong>9</strong> item(s) left in stock!</div>
+          <div class="bar"><div class="progress"></div></div>
+          <div class="Size">Size:M</div>
+          <div class="butons">
+            <button class="M">M</button>
+            <button class="L">L</button>
+            <button class="XL">XL</button>
+            <button class="XXL">XXL</button>
+          </div>
+        <span class="color">Color:Blue</span>
+          <div class="renkkutulari">
+              <div class="mavi"></div>
+              <div class="siyah"></div>
+              <div class="pembe"></div>  
+          </div>
+        <span class="miktar">Quantity</span>
+        <div class="adett">
+          - 1 +
+        </div>
+        <div class="cart">Add to cart</div>
+        <div class="altyazilar">
+        <i class="fa-solid fa-code-compare"> Compare</i> <i class="fa-solid fa-question"> Ask a question</i> <i class="fa-solid fa-share">Share</i>
+        </div>
+       <div class="del">
+        <i class="fa-solid fa-truck-fast"></i>
+          Estimated Delivery:
+          <div class="deltime"> Jul 30 - Aug 03</div>
+      </div>
+       <div class="dell">
+        <i class="fa-solid fa-box"></i>
+          Free Shipping & Returns:
+          <div class="delltime"> On all orders over $75</div>
+      </div>
+      <div class="payment">
+        <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-amex"></i> <i class="fa-brands fa-cc-jcb"></i> <i class="fa-brands fa-cc-discover"></i>
+        <div class="text2"> Guarantee safe & secure checkout
+        </div>
+  </div>
+       
+      </div>
+    </header>
+  </body>
+</html>

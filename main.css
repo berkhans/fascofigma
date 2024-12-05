@@ -1,0 +1,642 @@
+/* Header */
+header {
+    position: absolute;         /* Header'ı sayfa akışından çıkarır */
+    width: 1280px;              /* Header genişliği */
+    height: 58px;               /* Header yüksekliği */
+    left: 320px;                /* Header'ın sol tarafını 320px yapar */
+    top: 70px;                  /* Header'ı üstten 70px aşağıya yerleştirir */
+    display: flex;              /* Flexbox kullanarak öğeleri hizalar */
+    align-items: center;        /* Dikeyde ortalama */
+}
+
+/* Başlık (h1) stilini düzenleme */
+.baslik {
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 100%;
+    color: #484848;
+    margin: 0;
+}
+
+/* Menü düzenlemeleri */
+.menu {
+
+
+width: 431.82px;
+height: 24px;
+left: calc(50% - 431.82px/2 + 2.91px);
+top: 83px;
+
+
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 65px;
+    
+    margin-left: 150px; /* Menü öğelerini sola hizalar */
+}
+
+
+
+
+.menu li {
+    margin-right: 20px;         /* Menü öğeleri arasına sağdan boşluk ekler */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #484848;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+.menu a:hover {
+    color: #9b9b9b;  
+               
+}
+
+.tools {
+    position: absolute;
+    top: 0px; 
+    right: 20px; 
+    display: flex; 
+    gap: 30px; 
+    justify-content: flex-end; 
+    align-items: center; 
+    width: auto;
+    height: 58px; 
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 10%;
+}
+
+.thumbnail {
+    width: 70px;  
+    height: 93px; 
+    cursor: pointer;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); 
+}
+
+/* Büyük resim kısmı (sağ tarafta büyük resim) */
+.large-image-container {
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#large-image {
+    width: 491px;   /* Büyük resmin genişliği */
+    height: 655px;  /* Büyük resmin yüksekliği */
+    object-fit: contain; /* Büyük resmi kesmeden sığdırır */
+    border: 2px solid #ddd;
+    background-color: white;
+}
+.container{
+position: absolute;
+display: flex;
+align-items: flex-start;
+height: 615px;
+width: 672px;
+left: 0px;
+right: 0px;
+top: 150px;
+}
+.ustbaslik{
+
+font-family: 'Volkhov';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-transform: uppercase;
+color: #666666;
+}
+.details {
+   
+        margin-top: 1110px;
+        margin-left: 50px;
+        display: flex-start;           /* Hatalı 'flex-start' yerine 'flex' kullanın */
+        flex-direction: column;
+        gap: 10px;
+  }
+.urunadi{
+font-family: 'Volkhov';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 42px;
+color: #000000;
+margin-right: 330px;
+
+}
+.yildizyan{
+display: flex;
+justify-content: center; 
+align-items: center; 
+box-sizing: border-box;
+padding: 12px 12.5px 13px;
+width: 45px;
+height: 45px;
+left: 540px;
+top: 0px;
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+border-radius: 45px;
+}
+.yildiz{
+    font-family: Jost;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.urunyildiz{
+    display: flex;            /* Flexbox kullanarak öğeleri yatayda hizalar */
+  align-items: center; 
+
+}
+.fiyat{
+    /* $39.00 */
+
+width: 77px;
+height: 32px;
+
+font-family: 'Volkhov';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.eskif{
+    /* $59.00 */
+
+width: 51px;
+height: 20px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height, or 120% */
+display: flex;
+align-items: center;
+text-decoration-line: line-through;
+
+color: #666666;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.indirim{
+font-family: jost;
+color: white;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 2.5px 9.69px 2.5px 10px;
+
+
+left: 143.58px;
+right: 0px;
+top: 5.5px;
+bottom: 5.5px;
+
+background: #DA3F3F;
+border-radius: 11px;
+
+}
+.fiyatbolumu{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.viewtext{
+    /* 24 people are viewing this right now */
+
+
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+color: #8A8A8A;
+
+
+}
+.view{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.pink{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    
+}
+.border{
+box-sizing: border-box;
+gap: 5px;
+height: 54px;
+background: #FDEFEE;
+border: 1px solid #F8CCCC;
+border-radius: 4px;
+}
+.text1{
+width: 585px;
+height: 54px;
+font-family: 'Volkhov';
+display: flex;
+align-items: flex-start;
+align-items: center;
+margin-left: 12px;
+gap: 150px;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: #FF706B;
+}
+.timeh{
+display: flex;
+gap: 10px;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+color: #FF706B;
+letter-spacing: 4px;
+padding-right: 10px;
+}
+
+.stock{
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #666666;
+}
+.bar{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding-right: 15px;
+
+width: 585px;
+height: 5px;
+
+background: #DEDEDE;
+border-radius: 2px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.progress {
+    width: 10%;                /* Çubuğun %10'u kadar kırmızı */
+    height: 100%;              /* Çubuğun tamamı kadar yüksek */
+    background: #EF2D2D;       /* Kırmızı renk */
+    border-radius: 2px;        /* Bar içinde konumlandırılır */
+    display: flex;
+  }
+  .Size , .color , .miktar{
+margin-top: 20px;
+width: 57px;
+height: 24px;
+font-family: 'Volkhov';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+
+.butons{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+.M{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 14.8px 9px 15.2px;
+color: white;
+min-width: 45px;
+height: 45px;
+left: 0px;
+right: 540px;
+top: 36px;
+background: #000000;
+border: 1px solid #000000;
+border-radius: 5px;
+}
+.L , .XL , .XXL{
+    /* Label */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+min-width: 45px;
+height: 45px;
+left: 55px;
+right: 485px;
+top: 36px;
+
+border: 1px solid #EEEEEE;
+border-radius: 5px;
+
+}
+
+.mavi{
+    /* Label */
+
+width: 40px;
+height: 40px;
+
+background: #8DB4D2;
+box-shadow: 0px 0px 0px 1px #000000, inset 0px 0px 0px 4px #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.siyah{
+    /* Label */
+
+width: 40px;
+height: 40px;
+
+background: #000000;
+box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.pembe{
+    /* Label */
+
+width: 40px;
+height: 40px;
+
+background: #FFD1DC;
+box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+.renkkutulari{
+    display: flex;
+    gap: 10px;
+}
+
+.adett{
+/* quantity-input */
+box-sizing: border-box;
+letter-spacing: 16px;
+position: absolute;
+font-family: 'Jost';
+align-items: center;
+justify-content: center;
+padding-left:10px;
+padding-top: 10px;
+padding-bottom: 10px;
+
+border: 1px solid #EEEEEE;
+border-radius: 4px;
+display: flex;
+}
+
+.cart{
+    /* Button */
+
+box-sizing: border-box;
+margin-left: 150px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 11px 178.97px 11px 179.03px;
+
+width: 442px;
+height: 45px;
+left: 158px;
+bottom: 65.5px;
+
+border: 1px solid #000000;
+border-radius: 5px;
+font-family: 'volkov    ';
+}
+
+
+.altyazilar{
+    padding-top: 50px;
+    display: flex;
+    gap: 35px;
+    font-size: 10px;
+    
+}
+
+.del{
+    /* Strong ⏵ Estimated Delivery: */
+
+font-family: 'Volkhov';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+padding-top: 50px;
+}
+
+.deltime{
+    /* Jul 30 - Aug 03 */
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.dell{
+    /* Strong ⏵ Estimated Delivery: */
+
+font-family: 'Volkhov';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+padding-top: 10px;
+}
+
+.delltime{
+    /* Jul 30 - Aug 03 */
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.payment{
+    /* Payment Options */
+margin-top: 20px;
+font-family: 'Volkhov';
+height: 108.92px;
+justify-content: space-between;
+background: #e7e7e7;
+display: flex;
+position: relative;
+border-radius: 5px;
+
+
+}
+
+.text2{
+    display: flex-start;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;       /* Alt kenardan 20px yukarıda */
+    left: 50%;          /* Sol kenardan %50 uzağa yerleştir */
+    transform: translateX(-50%); /* X ekseninde merkeze kaydır */
+    text-align: center;
+    font-size: 16px;
+}
